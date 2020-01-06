@@ -1,0 +1,172 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[top=12ex, bottom=12ex, left=9ex, right=9ex,showframe=false]{geometry}
+\linespread{1.8}
+\usepackage[ampersand]{easylist}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{ \fancyplain{}{Yuhao Yang} }
+\rhead{ \fancyplain{}{\leftmark} }
+\cfoot{ \fancyplain{}{\thepage} }
+\usepackage[unicode]{hyperref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{latexsym}
+\usepackage{pifont}
+\usepackage{fourier}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{extarrows}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{arrows,positioning,calc,fadings,shapes,decorations.markings}
+\usepackage{array}
+\usepackage{anyfontsize}
+\usepackage{indentfirst}
+\usepackage{ulem}
+\usepackage{paralist}
+\usepackage{enumitem}
+\usepackage{framed}
+\usepackage{tcolorbox}
+\usepackage{wrapfig}
+\usepackage{xfrac}
+
+% % % % % % % % % %
+
+% font type
+\renewcommand*\rmdefault{ppl}
+%\newcommand{\dd}{\mathrm{d}}
+%\newcommand{\ee}{\mathrm{e}}
+
+% % % % % % % % % %
+
+\renewcommand\thefootnote{\textcolor{blue}{[\arabic{footnote}]}}
+\hypersetup{
+    colorlinks, linkcolor={purple}, citecolor={blue}, urlcolor={blue},
+    pdftitle={Cambridge International A-Level Physics Course Handout},
+    pdfauthor={Yuhao Yang},
+    pdfsubject={A-Level Physics} }
+
+% tikz arrows
+\tikzset{>=stealth', pil/.style={ ->, thick, shorten <=2pt, shorten >=2pt,} }
+
+% tikz decription node style
+\tikzset{note/.style={rectangle, rounded corners, minimum size=6mm, draw=black, fill=white, font=\itshape, align=center,execute at begin node=\setlength{\baselineskip}{1.2em}}}
+\tikzset{graphlabel/.style={postaction={decorate,transform shape, decoration={markings, mark=at position .5 with \node #1;}}}}
+
+% % % % % % % % % % %
+
+% example environment
+\newcounter{example}[section]
+\renewcommand{\theexample}{\arabic{section}.\arabic{example}}
+
+\newcommand{\example}[1]{\refstepcounter{example}
+	\vspace*{0.5\baselineskip}\noindent{\textsf{\textbf{Example \theexample }} \hspace*{1pt} #1 %
+	}}
+\newcommand{\eoe}{\hfill $\square$}
+\newcommand{\teoe}{\tag*{$\square$}}
+
+\newcommand{\keypoint}[1]{\textbf{\textcolor{red}{#1}}}
+\newcommand{\cmt}{\noindent\hspace{-0.4em}\ding{43} \hspace{0.4em}}
+
+% indentation and line spacing in itemize environment
+\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\everymath{\displaystyle}
+
+% indentation of paragraphs and table of contents
+\setlength{\parindent}{1.2em}
+
+% columns with customised width in tabulars
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{D}[1]{ >{\centering\arraybackslash} m{1cm} }
+
+\title{Further Mechanics}
+\author{Yuhao Yang}
+
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\opdt}{\frac{\mathrm{d}}{\mathrm{d}t}}
+\newcommand{\ddt}[1]{\frac{\mathrm{d}#1}{\mathrm{d}t}}
+\newcommand{\dddt}[1]{\frac{\mathrm{d}^2#1}{\mathrm{d}t^2}}
+\newcommand{\RA}{\quad \Rightarrow \quad}
+\newcommand{\mps}{\text{ (m s$^{-1}$)}}
+\newcommand{\mpss}{\text{ (m s$^{-2}$)}}
+\newcommand{\tmax}{\text{max}}
+\newcommand{\tmin}{\text{min}}
+\newcommand{\rad}{\text{ rad}}
+\newcommand{\radps}{\text{ (rad s$^{-1}$)}}
+\newcommand{\eqskip}{\hspace{2.0em}}
+\newcommand{\yskip}{\vspace{0.6em}}
+
+\begin{document}
+	
+
+\vspace*{5pt}
+
+\begin{center}
+	{
+		\Huge Further Mechanics
+	
+	}
+	
+	{
+		\Large Yuhao Yang
+		
+		Easyday Education
+	
+	}
+
+	
+\end{center}
+
+\vspace*{5pt}
+
+\setcounter{page}{1}
+\pagenumbering{roman} 
+\tableofcontents
+%\listoffigures
+
+\newpage
+
+\section*{A Few Words about the Notes}
+
+
+This is a set of very concise lecture notes written for A-level further mechanics. I intend to introduce the physical concepts and principles required by the syllabus using a more mathematical approach, so that the reader may develop an appreciation of the interplay between mathematics and physics. A handful of worked examples are included to give the reader some rough idea about how exam-style questions look like and how the principles developed in the note can be applied to solve them. The complexity to type mathematical equations and draw diagrams on a computer gave me a good excuse to skip several interesting example questions.
+
+Presumably the target audience of the notes are students studying the relevant A-Level course. If you are a student hoping for good grades in your exams, I suggest you have your hand on a lot of problems. The notes are supposed to be used as a reference only, but it is eventually by practising one can have a better understanding of the subject.
+
+I have to admit that these notes are far from complete. I hope you enjoy reading the notes. But if you spot any mistake (as I guarantee there will be a lot), please let me know.
+
+{
+
+\flushright
+
+Yuhao Yang
+
+\url{colin.young@live.com}
+
+\today
+
+}
+
+
+\newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\include{momentum}
+
+\include{circular-motion}
+
+\include{simple-harmonics}
+
+\include{rotational}
+
+\include{equilibrium}
+
+\include{misc}
+
+%\newpage
+%\printindex
+
+\end{document}
