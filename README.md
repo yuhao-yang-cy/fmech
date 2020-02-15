@@ -8,9 +8,9 @@ Please also be noted that these notes are for syllabus before 2019. There are si
 
 ## How to Use
 
-Master file fmech-notes.tex 
+Master file: fmech-notes.tex 
 
-The master file references the references five chapters, each in separated .tex files as suggested by file names.
+The master file references five chapters, each in separated .tex files as suggested by file names.
 
 My default compiler is XeLaTeX, which is recommended. PdfLaTeX also works fine for me. I am not sure about other compilers.
 
