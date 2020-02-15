@@ -1,12 +1,10 @@
 ## Introduction
 
-This is a set of very concise lecture notes written for [CIE A-level further mechanics](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-mathematics-further-9231/)  (syllabus code 9231). Presumably the target audience of the notes are students studying the relevant A-Level course. 
+This is a set of very concise lecture notes written for [CIE A-level Further Mechanics](https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-mathematics-further-9231/)  (syllabus code 9231). Presumably the target audience of the notes are students studying the relevant A-Level course. 
 
 These notes are supposed to be self-contained. A handful of worked examples are included to give the reader some rough idea about how exam-style questions look like and how the principles developed in the note can be applied to solve them.
 
-I also have to admit that these notes are far from complete. I hope you enjoy reading the notes. But if you spot any mistake (as I guarantee there will be a lot), please let me know.
-
-Also please be noted that these notes are for syllabus before 2019. There are significant changes to the syllabus since 2020. Some topics are removed from the old syllabus, and some other are added to the new syllabus. There might be changes to the style of the questions as well. So the topics covered in my current notes are no longer tailored right for the new syllabus. But you are still free to use it as you wish.
+Please also be noted that these notes are for syllabus before 2019. There are significant changes to the syllabus since 2020. Some topics are removed from the old syllabus, and some other are added to the new syllabus. There might be changes to the style of the questions as well. So the topics covered in my current notes are no longer tailored right for the new syllabus. But you are still free to use it as you wish.
 
 ## How to Use
 
